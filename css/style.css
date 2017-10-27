@@ -1,1 +1,54 @@
+/*      GENERAL STYLES      */
 
+body {
+font-family: 'Raleway', sans-serif;
+font-size: 16px;
+}
+
+
+/*       NAVIGATION STYLES      */
+
+nav {
+  font-family: 'Lato', sans-serif;
+  background-color: skyblue;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  font-size: 20px;
+  padding-right: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: magenta;
+}
+
+
+/*      HEADER STYLES      */
+header {
+  background-color: #282828;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-text {
+  text-align: center;
+}
+
+.jumbotron-text h1 {
+  font-size: 2rem;
+}
