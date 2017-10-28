@@ -1,54 +1,202 @@
 /*      GENERAL STYLES      */
 
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-font-family: 'Raleway', sans-serif;
-font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background: url('../img/pink-dust.png');
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background-style {
+  background-color: rgba(255,255,255,0.8);
+  padding: 50px;
+  text-align: center;
 }
 
 
 /*       NAVIGATION STYLES      */
 
-nav {
-  font-family: 'Lato', sans-serif;
-  background-color: skyblue;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-}
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-nav li {
-  font-size: 20px;
-  padding-right: 100px;
-}
-
-nav a {
+.menuIcon {
+  background: #CCD0C9;
+  display: block;
+  color: #fff;
   text-decoration: none;
-  color: black;
+  padding: .75em;
+  font-size: 1.5em;
+  text-align: right;
 }
 
-nav a:hover {
-  color: magenta;
+.nav {
+  background: #CCD0C9;
+  text-align: center;
+  display: none;
+}
+
+.nav li {
+  font-weight: 300;
+  list-style: none;
+  letter-spacing: .1em;
+  padding: 1em;
+}
+
+.nav a:hover {
+  color: #06919a;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #282828;
+}
+
+.selected {
+  background: #06919a;
+}
+
+.list {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .nav li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    padding: 1em;
+  }
+
+  .nav a {
+    color: #282828;
+  }
+
+  .nav a:hover {
+    color: #06919a;
+  }
+
+  .selected {
+    background: #06919a;
+  }
+  
+  .menuIcon {
+    display: none;
+  }
 }
 
 
 /*      HEADER STYLES      */
 header {
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 0.6);
   color: white;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 48px;
 }
 
 .jumbotron-text {
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .jumbotron-text h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
+
+.jumbotron-text h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+
+/*      FORM STYLINGS      */
+
+input, textarea {
+  display: block;
+}
+
+.flex-outer {
+  padding: 50px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.flex-outer li {
+  display: flex;
+  align-items: center;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + * {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+/*      CONTACT SECTION      */
+
+.column-50 {
+  width: 50%;
+  max-width: 800px;
+  float: left; 
+}
+
