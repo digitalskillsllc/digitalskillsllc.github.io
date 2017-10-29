@@ -16,8 +16,10 @@ body {
 
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .background-style {
@@ -69,7 +71,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 823px) {
   .nav {
     position: fixed;
     top: 0;
@@ -107,14 +109,21 @@ body {
 
 
 /*      HEADER STYLES      */
+
 header {
-  background-color: rgba(40, 40, 40, 0.6);
+  background-color: rgba(40, 40, 40, 0.8);
   color: white;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 48px;
+}
+
+@media (max-width: 823px) {
+  header {
+    margin-top: 0px;
+  }
 }
 
 .jumbotron-text {
@@ -141,7 +150,7 @@ input, textarea {
 
 .flex-outer {
   padding: 50px;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.8);
 }
 
 .flex-outer li {
@@ -219,5 +228,33 @@ input, textarea {
   display: inline-block;
   width: 30%;
   background-color: #4B595D;
+  color: white;
+}
+
+/*      FOOTER STYLES      */
+
+footer {
+  clear: both;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.fa {
+  color: #4B595D;
+  margin-top: 10px;
+}
+
+.fa:hover {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: black
+}
+
+footer a:hover {
   color: white;
 }
