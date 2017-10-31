@@ -25,7 +25,10 @@ body {
 .background-style {
   background-color: rgba(255,255,255,0.8);
   padding: 50px;
-  text-align: center;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 
@@ -64,7 +67,7 @@ body {
 }
 
 .selected {
-  background: #06919a;
+  background: #06919A;
 }
 
 .list {
@@ -101,7 +104,7 @@ body {
   .selected {
     background: #06919a;
   }
-  
+
   .menuIcon {
     display: none;
   }
@@ -206,13 +209,36 @@ input, textarea {
 .column-50 {
   width: 50%;
   max-width: 800px;
-  float: left; 
+  float: left;
+}
+
+/*     CONCEPTS PAGE      */
+
+.concepts .week-title {
+  background-color: #06919A;
+  padding: 20px;
+  margin: -50px -50px 20px;
+}
+
+.concepts a {
+  color: #282828;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.concepts a:hover {
+  color: white;
 }
 
 /*      EXERCISES PAGE      */
 
+.exercises, .concepts {
+  text-align: center;
+}
+
 .exercises .background-style h1 {
-  font-size: 3rem; 
+  font-size: 3rem;
   padding-bottom: 10px;
   margin-top: 30px;
 }
