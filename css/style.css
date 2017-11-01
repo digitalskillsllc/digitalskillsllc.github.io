@@ -214,7 +214,7 @@ input, textarea {
 
 /*     CONCEPTS PAGE      */
 
-.concepts .week-title {
+.concepts .weektitle {
   background-color: #06919A;
   padding: 20px;
   margin: -50px -50px 20px;
@@ -229,6 +229,20 @@ input, textarea {
 
 .concepts a:hover {
   color: white;
+}
+
+.concepts .lesson-section {
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.concepts .expander {
+    background-color:#d3d3d3;
+    cursor: pointer;
+}
+.concepts .content {
+    display: none;
 }
 
 /*      EXERCISES PAGE      */
