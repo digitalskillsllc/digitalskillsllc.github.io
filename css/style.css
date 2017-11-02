@@ -20,11 +20,11 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 50px;
 }
 
 .background-style {
   background-color: rgba(255,255,255,0.8);
-  padding: 50px;
 }
 
 .strong {
@@ -116,7 +116,7 @@ body {
 header {
   background-color: rgba(40, 40, 40, 0.8);
   color: white;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +143,22 @@ header {
   font-size: 2rem;
   font-weight: 100;
 }
+
+/*     HOME PAGE      */
+
+.about .container {
+  text-align: center;
+  line-height: 25px;
+}
+
+.about h2 {
+  font-size: 25px;
+}
+
+.about p {
+  margin-top: 1rem;
+}
+
 
 
 /*      FORM STYLINGS      */
@@ -231,10 +247,13 @@ input, textarea {
   color: white;
 }
 
-.concepts .lesson-section {
+.concepts .lesson-section:not(:first-child) {
   margin-top: 20px;
+}
+
+.concepts .lesson-section {
   border: 1px solid black;
-  padding: 10px;
+  padding: 20px;
 }
 
 .concepts .expander {
@@ -243,6 +262,15 @@ input, textarea {
 }
 .concepts .content {
     display: none;
+}
+
+.fa-plus {
+  color: white !important;
+  padding-left: 15px;
+}
+
+.fa-plus:hover {
+  color: #CCD0C9 !important;
 }
 
 /*      EXERCISES PAGE      */
