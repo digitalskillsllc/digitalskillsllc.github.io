@@ -228,39 +228,54 @@ input, textarea {
   float: left;
 }
 
-/*     CONCEPTS PAGE      */
+/*         CONCEPTS       */
 
-.concepts .weektitle {
+.concepts .cards-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
+.concepts .column {
+  width: 20%;
+
+}
+
+/*     WEEKLY BREAKDOWN PAGE      */
+
+.breakdown .weektitle {
   background-color: #06919A;
   padding: 20px;
   margin: -50px -50px 20px;
+  text-align: center;
 }
 
-.concepts a {
+.breakdown a {
   color: #282828;
   text-decoration: none;
   font-size: 20px;
   line-height: 2rem;
 }
 
-.concepts a:hover {
+.breakdown a:hover {
   color: white;
 }
 
-.concepts .lesson-section:not(:first-child) {
+.breakdown .lesson-section:not(:first-child) {
   margin-top: 20px;
 }
 
-.concepts .lesson-section {
+.breakdown .lesson-section {
   border: 1px solid black;
   padding: 20px;
+  text-align: center;
 }
 
-.concepts .expander {
+.breakdown .expander {
     background-color:#d3d3d3;
     cursor: pointer;
 }
-.concepts .content {
+.breakdown .content {
     display: none;
 }
 
