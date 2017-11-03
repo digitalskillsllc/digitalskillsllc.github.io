@@ -443,14 +443,6 @@ footer a:hover {
 
 /*        MODAL        */
 
-.cont {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	overflow: scroll;
-}
 
 .modal {
 	position: fixed;
@@ -460,7 +452,6 @@ footer a:hover {
 	right: 0;
 	display: none;
 	opacity: 0;
-	overflow: scroll;
 }
 .modal:target {
 	display: block;
@@ -496,14 +487,15 @@ footer a:hover {
 .modal-title {
 	font-size: 3em;
 	font-weight: 100;
+  padding-top: 3%;
 }
 .modal-description {
-	padding: 1em;
-	font-size: 1.2em;
-	letter-spacing: 0.1em;
 	color: #EDEBEE;
+  width: 80%;
+  margin: 3% auto 0;
 }
 
 .bg {
-	background-color: #806973;
+	background-color: #5DBA9D;
+
 }
