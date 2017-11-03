@@ -36,29 +36,33 @@
         </header>
 
         <section class="concepts" id="concepts">
-          <div class="cards-row">
-            <div class="column">
-              <div class="card background-style">
-                The Box Model
-              </div>
-            </div>
-            <div class="column">
-              <div class="card background-style">
-                The Box Model
-              </div>
-            </div>
-            <div class="column">
-              <div class="card background-style">
-                Basic HTML Page
-              </div>
-            </div>
-            <div class="column">
-              <div class="card background-style">
-                The Box Model
-              </div>
-            </div>
+          <div class="container background-style">
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search..." title="Search for a concept">
+            <ul id="myUL">
+              <li>
+                <div class="content">
+                  <a href="#box-model" class="modal-open">The Box Model</a>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <a href="#flexbox" class="modal-open">View Modal B</a>
+                </div>
+              </li>
+            </ul>
           </div>
+          <section class="modal bg" role="dialog" id="box-model">
+          <a href="#" class="modal-exit" title="close">&times;</a>
+          <h1 id="modalA-title" class="modal-title">Modal A</h1>
+          <p id="modalA-description" class="modal-description">Lots of fun things in here to see.</p>
+          </section>
+          <section class="modal bg" role="dialog" id="flexbox">
+        	<a href="#" class="modal-exit" title="close">&times;</a>
+        	<h1 id="modalB-title" class="modal-title">Modal B</h1>
+        	<p id="modalB-description" class="modal-description">Lots of fun things in here to see.</p>
         </section>
+        </section>
+
 
         <footer>
           <p class="babytext">Made with ❤️&nbsp by <a href="https://www.sarahveness.com">Sarah Veness</a></p>
@@ -66,8 +70,11 @@
           </a> <a href="https://instagram.com/sarahveness" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
         </footer>
 
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
     </body>
 
 
